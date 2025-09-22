@@ -105,5 +105,14 @@ give me curl samples how to test it and does it really save the data in mongodb
 mongosh weather --eval "db.dropDatabase()" --quiet
 rm -rf weather-api-client
 ```
-
+![WhatsApp Image 2025-09-21 at 20 06 31](https://github.com/user-attachments/assets/f60892af-9fd1-4e14-921f-a453b72c5744)
+![WhatsApp Image 2025-09-21 at 20 06 31 (1)](https://github.com/user-attachments/assets/5f2d3c27-8303-435e-8da7-eeb5072cb5da)
+![WhatsApp Image 2025-09-21 at 20 06 31 (2)](https://github.com/user-attachments/assets/067f80dc-af01-4875-bab5-87c121b197ac)
+![WhatsApp Image 2025-09-21 at 20 06 31 (3)](https://github.com/user-attachments/assets/aeda64d6-b9c5-4b58-a518-756a67863d14)
+![WhatsApp Image 2025-09-21 at 20 06 31 (4)](https://github.com/user-attachments/assets/edca3efa-b119-4fca-aac5-cfd117442f76)
+![WhatsApp Image 2025-09-21 at 20 10 50](https://github.com/user-attachments/assets/d47b1b24-fd19-429f-9e39-198500406469)
+![WhatsApp Image 2025-09-21 at 20 15 24](https://github.com/user-attachments/assets/410c93dc-9f73-408b-8404-30e831d1420f)
+![WhatsApp Image 2025-09-21 at 20 15 25](https://github.com/user-attachments/assets/0a571f6f-32fe-4793-8301-c1f49e5309f3)
+![WhatsApp Image 2025-09-21 at 20 16 39](https://github.com/user-attachments/assets/8ca8d238-42a0-463d-b344-56d1500041f1)
+![WhatsApp Image 2025-09-21 at 20 18 05](https://github.com/user-attachments/assets/94776cfb-969d-4dbb-8f8f-1308ee38c8f2)
 

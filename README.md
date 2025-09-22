@@ -1,16 +1,16 @@
 # weather_dev_buddy
 
-Sample on how you can consume any REST API from an OpenAPI file and save data to MongoDB and generate Java code for this too, using Claude Cod,e without knowing the API structure or writing any code
+Sample on how you can consume any REST API from an OpenAPI file, save data to MongoDB and generate Java code for this too, using Claude Code, without knowing the API structure or writing any code.
 
 # What you can do
 
-- add MCP server for any REST API with OpenAPI specs
-- we have a preset MCP server for mongodb
-- discover what we can do with the API
-- simple flow how consume the API without knowing the structure
-- saving the data to mongodb
-- a more complex example with a flow that requires several API calls
-- generate code from the flows
+- Add MCP server for any REST API with OpenAPI specs
+- We have already configured MCP servers for `weather` API and `mongodb`
+- Discover what we can do with the API
+- Simple flow on how to consume the API without knowing the structure
+- Saving the data in mongodb
+- A more complex example with a flow that requires several API calls
+- Generate code for the above flows
 
 ## Start the container
 
@@ -18,7 +18,7 @@ Sample on how you can consume any REST API from an OpenAPI file and save data to
 docker start -ai weather_dev_buddy || docker run --name weather_dev_buddy -it xorio42/weather_dev_buddy:latest
 ```
 
-## (Optional) Add mcp server
+## (Optional) Adding an MPC server
 
 Now there is an mpc server added for weather API, but if  you need more you can add them similar to how this was added:
 

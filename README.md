@@ -37,6 +37,12 @@ claude mcp list # make sure it shows Connected
 claude
 ```
 
+### Select the model you want
+
+```
+/model
+```
+
 ### Discover what we can do with the API
 
 ```

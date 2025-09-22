@@ -18,8 +18,9 @@ Sample on how you can consume any REST API from an OpenAPI file and save data to
 docker start -ai weather_dev_buddy || docker run --name weather_dev_buddy -it xorio42/weather_dev_buddy:latest
 ```
 
+## (Optional) Add mcp server
 
-## Add mcp server for weather API and mongodb
+Now there is an mpc server added for weather API, but if  you need more you can add them similar to how this was added:
 
 ```
 claude mcp add weather -- node /openai-to-mcp/dist/src/index.js --spec https://api.weather.gov/openapi.json --base-url https://api.weather.gov

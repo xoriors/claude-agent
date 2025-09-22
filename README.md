@@ -15,7 +15,7 @@ Sample on how you can consume any REST API from an OpenAPI file and save data to
 ## Start the container
 
 ```
-docker run --name weather_dev_buddy -it xorio42/weather_dev_buddy:latest
+docker start -ai weather_dev_buddy || docker run --name weather_dev_buddy -it xorio42/weather_dev_buddy:latest
 ```
 
 

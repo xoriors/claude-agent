@@ -18,9 +18,9 @@ Sample on how you can consume any REST API from an OpenAPI file, save data to Mo
 docker start -ai weather_dev_buddy || docker run --name weather_dev_buddy -it xorio42/weather_dev_buddy:latest
 ```
 
-## (Optional) Adding an MPC server
+## (Optional) Adding an MPC server for a REST API by an OpenAPI specs file
 
-Now there is an mpc server added for weather API, but if  you need more you can add them similar to how this was added:
+Now there is an MCP server added for [weather](https://api.weather.gov/) API, but if  you need more, you can add them similarly to how this was added:
 
 ```
 claude mcp add weather -- node /openai-to-mcp/dist/src/index.js --spec https://api.weather.gov/openapi.json --base-url https://api.weather.gov
@@ -37,6 +37,8 @@ claude mcp list # make sure it shows Connected
 ```
 claude
 ```
+
+Handle login.
 
 ### Select the model you want
 
@@ -98,7 +100,7 @@ respsect these:
 then commit tme with relevant commit message
 ```
 
-### View dagrams while generating the code. you could first review and change diagram as needed and then generate  the code based on those
+### View diagrams while generating the code. You could first review and change the diagrams as needed, and then generate  the code based on those
 
 ### Check the code and run some tests
 

@@ -114,6 +114,15 @@ give me curl samples how to test it and does it really save the data in mongodb
 mongosh weather --eval "db.dropDatabase()" --quiet
 rm -rf weather-api-client
 ```
+
+# Build Docker
+
+The Dockerfile is based on [claude-code/.devcontainer](https://github.com/anthropics/claude-code/tree/main/.devcontainer)
+
+
+
+# Sample
+
 ![WhatsApp Image 2025-09-21 at 20 06 31](https://github.com/user-attachments/assets/ba5ff25d-0e89-4450-a5f2-f81ccde15ce2)
 ![WhatsApp Image 2025-09-21 at 20 06 31](https://github.com/user-attachments/assets/f60892af-9fd1-4e14-921f-a453b72c5744)
 ![WhatsApp Image 2025-09-21 at 20 06 31 (1)](https://github.com/user-attachments/assets/5f2d3c27-8303-435e-8da7-eeb5072cb5da)

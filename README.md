@@ -1,4 +1,4 @@
-# claude_agent
+# claude-agent
 
 Sample on how you can consume any REST API from an OpenAPI file, save data to MongoDB and generate Java code for this too, using Claude Code, without knowing the API structure or writing any code.
 
@@ -15,7 +15,7 @@ Sample on how you can consume any REST API from an OpenAPI file, save data to Mo
 ## Start the container
 
 ```
-docker start -ai claude_agent || docker run --name claude_agent -it xorio42/claude_agent:latest
+docker start -ai claude-agent || docker run --name claude-agent -it xorio42/claude-agent:latest
 ```
 
 ## (Optional) Adding an MPC server for a REST API by an OpenAPI specs file

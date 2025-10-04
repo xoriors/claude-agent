@@ -22,7 +22,6 @@ docker compose up -d
 
 ```zsh
 docker compose attach claude-agent
-exit
 ```
 
 ## Execute commands in container

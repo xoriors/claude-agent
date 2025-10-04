@@ -1,0 +1,6 @@
+services:
+  claude-agent:
+    image: xorio42/claude-agent:latest
+    container_name: claude-agent
+    network_mode: host
+    restart: unless-stopped

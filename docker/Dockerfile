@@ -128,15 +128,11 @@ RUN claude mcp add petstore -- \
   --api-url https://petstore3.swagger.io/api/v3 \
   --spec-url https://petstore3.swagger.io/api/v3/openapi.json
 
-RUN  claude mcp add weather -- \
+RUN claude mcp add weather -- \
   awslabs.openapi-mcp-server \
   --api-name weather \
   --api-url https://api.weather.gov \
   --spec-url https://api.weather.gov/openapi.json
-
-RUN claude mcp add mongodb \
-  --env MDB_MCP_CONNECTION_STRING="mongodb://localhost:27017/42" -- \
-  npx -y mongodb-mcp-server@latest
 
 # Copy resources
 COPY res/* /home/workspace
@@ -149,4 +145,4 @@ RUN chmod +x /usr/local/bin/init-firewall.sh && \
   chmod 0440 /etc/sudoers.d/claude-firewall
 USER claude
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["/bin/zsh"]

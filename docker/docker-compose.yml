@@ -3,4 +3,6 @@ services:
     image: xorio42/claude-agent:latest
     container_name: claude-agent
     network_mode: host
+    stdin_open: true
+    tty: true
     restart: unless-stopped

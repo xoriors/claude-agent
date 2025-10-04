@@ -2,39 +2,52 @@
 
 Sample on how you can consume any REST API from an OpenAPI file, save data to MongoDB and generate Java code for this too, using Claude Code, without knowing the API structure or writing any code.
 
-# What you can do
+## What you can do
 
 - Add MCP server for any REST API with OpenAPI specs
-- We have already configured MCP servers for `weather` API and `mongodb`
+- We have already configured MCP servers for `petstore` and `weather` API
 - Discover what we can do with the API
 - Simple flow on how to consume the API without knowing the structure
 - Saving the data in mongodb
 - A more complex example with a flow that requires several API calls
 - Generate code for the above flows
 
-## Start the container
+## Start the container (only one time)
 
-```
-docker start -ai claude-agent || docker run --name claude-agent -it xorio42/claude-agent:latest
-```
-
-## (Optional) Adding an MPC server for a REST API by an OpenAPI specs file
-
-Now there is an MCP server added for [weather](https://api.weather.gov/) API, but if  you need more, you can add them similarly to how this was added:
-
-```
-claude mcp add weather -- node /openai-to-mcp/dist/src/index.js --spec https://api.weather.gov/openapi.json --base-url https://api.weather.gov
+```zsh
+docker compose up -d
 ```
 
-### Test it
+## Connect to existing container (next times) 
 
-`
-claude mcp list # make sure it shows Connected
-`
+```zsh
+docker compose attach claude-agent
+...
+exit
+```
+
+## Execute commands in container
+
+See [more](#docker/res/README.MD)
+
+## Stop the container
+
+```zsh
+docker compose down
+```
+
+## Remove the container (WARN: DATA WILL BE LOST)
+
+```zsh
+# if it's started
+docker compose down
+
+docker compose rm
+```
 
 ## Play with it
 
-```
+```zsh
 claude
 ```
 
@@ -60,7 +73,7 @@ get top 3 active weather alerts for today in US Florida, show them and also save
 
 #### Check if data was inserted in mongodb
 
-```
+```zsh
 mongosh --quiet --eval "use('weather'); db.alerts.find().pretty()"
 ```
 
@@ -72,7 +85,7 @@ discover what tools to call from weather tools to get temperature, cloud cover a
 
 #### Check if data was inserted in mongodb
 
-```
+```zsh
 mongosh --quiet --eval "use('weather'); db.historical.find().pretty()"
 ```
 
@@ -110,7 +123,7 @@ give me curl samples how to test it and does it really save the data in mongodb
 
 ## Cleanup
 
-```
+```zsh
 mongosh weather --eval "db.dropDatabase()" --quiet
 rm -rf weather-api-client
 ```
@@ -119,7 +132,9 @@ rm -rf weather-api-client
 
 The Dockerfile is based on [claude-code/.devcontainer](https://github.com/anthropics/claude-code/tree/main/.devcontainer)
 
-
+```zsh
+docker buildx build --sbom=true --provenance=true -f docker/Dockerfile -t xorio42/claude-agent docker/
+```
 
 # Sample
 

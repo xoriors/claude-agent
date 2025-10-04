@@ -33,7 +33,7 @@ docker compose attach claude-agent
 
 ## Execute commands in container
 
-See [more](#docker/res/README.MD)
+See [more](docker/res/README.MD)
 
 ## Stop the container
 

@@ -149,4 +149,4 @@ RUN chmod +x /usr/local/bin/init-firewall.sh && \
   chmod 0440 /etc/sudoers.d/claude-firewall
 USER claude
 
-CMD ["/bin/zsh"]
+CMD ["tail", "-f", "/dev/null"]

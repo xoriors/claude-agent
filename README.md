@@ -15,6 +15,10 @@ Sample on how you can consume any REST API from an OpenAPI file, save data to Mo
 - A more complex example with a flow that requires several API calls
 - Generate code for the above flows
 
+## Use docker compose
+
+Get [docker-compose.yml](docker/docker-compose.yml) and save it in a folder where you'll run the next commands.
+
 ## Start the container (only one time)
 
 ```zsh

@@ -1,5 +1,8 @@
 # claude-agent
 
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-xorio42%2Fclaude-agent?logo=docker)](https://hub.docker.com/r/xorio42/claude-agent)
+
+
 Sample on how you can consume any REST API from an OpenAPI file, save data to MongoDB and generate Java code for this too, using Claude Code, without knowing the API structure or writing any code.
 
 ## What you can do

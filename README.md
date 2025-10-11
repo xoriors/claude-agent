@@ -35,21 +35,6 @@ docker compose attach claude-agent
 
 See [more](docker/res/README.MD)
 
-## Stop the container
-
-```zsh
-docker compose down
-```
-
-## Remove the container (WARN: DATA WILL BE LOST)
-
-```zsh
-# if it's started
-docker compose down
-
-docker compose rm
-```
-
 ## Play with it
 
 ```zsh
@@ -131,6 +116,21 @@ give me curl samples how to test it and does it really save the data in mongodb
 ```zsh
 mongosh weather --eval "db.dropDatabase()" --quiet
 rm -rf weather-api-client
+```
+
+## Stop the container
+
+```zsh
+docker compose down
+```
+
+## Remove the container (WARN: DATA WILL BE LOST)
+
+```zsh
+# if it's started
+docker compose down
+
+docker compose rm
 ```
 
 # Build Docker

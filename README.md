@@ -127,10 +127,7 @@ docker compose down
 ## Remove the container (WARN: DATA WILL BE LOST)
 
 ```zsh
-# if it's started
 docker compose down
-
-docker compose rm
 ```
 
 # Build Docker

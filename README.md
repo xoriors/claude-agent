@@ -135,7 +135,8 @@ docker compose down
 The Dockerfile is based on [claude-code/.devcontainer](https://github.com/anthropics/claude-code/tree/main/.devcontainer)
 
 ```zsh
-docker buildx build --sbom=true --provenance=true -f docker/Dockerfile -t xorio42/claude-agent docker/
+cd docker
+docker buildx build --sbom=true --provenance=true -t xorio42/claude-agent .
 ```
 
 # Sample

@@ -1,6 +1,7 @@
 services:
   claude-agent:
     image: xorio42/claude-agent:latest
+    platform: linux/amd64
     container_name: claude-agent
     network_mode: host
     stdin_open: true

@@ -43,6 +43,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   gcc \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Install lazygit
+ARG LAZYGIT_VERSION=0.44.1
+RUN ARCH=$(dpkg --print-architecture) && \
+  wget "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_${ARCH}.tar.gz" && \
+  tar -xzf "lazygit_${LAZYGIT_VERSION}_Linux_${ARCH}.tar.gz" lazygit && \
+  install lazygit /usr/local/bin && \
+  rm -f "lazygit_${LAZYGIT_VERSION}_Linux_${ARCH}.tar.gz" lazygit
+
 # Install pipx using pip to ensure it uses Python 3.13
 RUN pip install --no-cache-dir pipx
 

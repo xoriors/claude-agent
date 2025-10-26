@@ -41,6 +41,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   libpq-dev \
   postgresql-client-18 \
   gcc \
+  ripgrep \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install pipx using pip to ensure it uses Python 3.13

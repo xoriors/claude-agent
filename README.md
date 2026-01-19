@@ -37,7 +37,7 @@ docker compose attach claude-agent
 
 ## Execute commands in container
 
-See [more](docker/res/README.MD)
+See [more examples](docker/res/README.MD)
 
 ## Play with it
 
